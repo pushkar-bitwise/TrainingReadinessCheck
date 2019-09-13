@@ -33,15 +33,76 @@
     <dmn:informationRequirement id="_BC2759D9-4B2E-4E0D-A881-22C50098C582">
       <dmn:requiredInput href="#_55C7D15F-67DF-4D41-B82D-C122C8457788"/>
     </dmn:informationRequirement>
-    <dmn:literalExpression id="_C8CBC1E5-3998-4FD8-AE3C-39B04C7547E9">
-      <dmn:text></dmn:text>
-    </dmn:literalExpression>
+    <dmn:decisionTable id="_DC88491B-1098-4939-8D5E-12F99B759653" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_D5777D57-9D97-485D-A3CA-937C793F3DB7">
+        <dmn:inputExpression id="_6D3FDFBA-B90C-4884-8C09-D5A355F72B66" typeRef="number">
+          <dmn:text>TraineeData.BikeDistance</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_1AA712F4-C031-4554-BD89-940E078C5A39">
+        <dmn:inputExpression id="_8E81CB91-88C8-4CB2-B2BB-ADBE3380E283" typeRef="time">
+          <dmn:text>TraineeData.BikeDuration</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_72CB4383-B58B-4939-9956-AB19CCEB0CF3">
+        <dmn:inputExpression id="_C5FDA55B-FB31-45D0-A4F9-C7BE9C0D12F8" typeRef="number">
+          <dmn:text>TraineeData.RunDistance</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_C32C6292-7021-4E34-9684-8401382C7E6D">
+        <dmn:inputExpression id="_D1A62A28-ED50-465A-AA6B-C7B0896EB7EA" typeRef="time">
+          <dmn:text>TraineeData.RunPace</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_D71ECF9F-41D6-4C80-87B7-0B26BBF20C89">
+        <dmn:inputExpression id="_0C2E69A0-C35A-4C99-9592-10F0D9D3617F" typeRef="number">
+          <dmn:text>TraineeData.SwimDistance</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_15132C66-946D-476C-B4B3-B1CC9CD903E7">
+        <dmn:inputExpression id="_8AE3DB5B-D0EC-413D-BE32-A4939268523D" typeRef="time">
+          <dmn:text>TraineeData.SwimTime</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_08DF8503-8D14-4163-91B8-AC5651CA8A4A" typeRef="Trainee"/>
+      <dmn:rule id="_802F5FC4-4EEE-4760-B656-D1507B57D871">
+        <dmn:inputEntry id="_7BEE5CB9-6ED6-491E-88CE-050881FA61B0">
+          <dmn:text>10</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_05426CDA-BDAE-481B-9948-E93560CD1F6E">
+          <dmn:text>90</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_7A58E901-48A5-4814-8C09-73784751B2FD">
+          <dmn:text></dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_77D8C00F-E519-405A-B4B9-CADF7C545DB7">
+          <dmn:text></dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_0D343BAF-64D2-4000-A30D-C9C9FF040AD7">
+          <dmn:text></dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_2E622CC6-B132-4AD3-8CD9-7F55CE25A6BB">
+          <dmn:text></dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_78ED7C6B-C0EE-4683-830C-3C14D100BA19">
+          <dmn:text></dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_C8CBC1E5-3998-4FD8-AE3C-39B04C7547E9">
+          <kie:ComponentWidths dmnElementRef="_DC88491B-1098-4939-8D5E-12F99B759653">
+            <kie:width>50.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>100.0</kie:width>
             <kie:width>100.0</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
