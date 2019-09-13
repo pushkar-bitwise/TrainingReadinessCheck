@@ -66,13 +66,13 @@
       <dmn:output id="_08DF8503-8D14-4163-91B8-AC5651CA8A4A" typeRef="Trainee"/>
       <dmn:rule id="_2DA6B8BA-0D88-4D8D-B115-9A2D9376D1D3">
         <dmn:inputEntry id="_00C62E6A-7401-4A7F-AD4C-64199F424EEF">
-          <dmn:text>&gt; 28</dmn:text>
+          <dmn:text> 28</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_5C70F391-423A-418A-BB1C-836C3FC98FC1">
-          <dmn:text> =&lt; 60</dmn:text>
+          <dmn:text>60</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_013019B7-B992-4900-A092-6842AEF8075D">
-          <dmn:text> > 5</dmn:text>
+          <dmn:text> 5</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_178BDF9C-96F5-4C03-9FBD-758AE20E7505">
           <dmn:text>1:30</dmn:text>
@@ -92,10 +92,10 @@
           <dmn:text>25..28</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_05426CDA-BDAE-481B-9948-E93560CD1F6E">
-          <dmn:text> =&lt; 110</dmn:text>
+          <dmn:text>110</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_7A58E901-48A5-4814-8C09-73784751B2FD">
-          <dmn:text> > 5</dmn:text>
+          <dmn:text> 5</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_77D8C00F-E519-405A-B4B9-CADF7C545DB7">
           <dmn:text>2:30</dmn:text>
