@@ -1,9 +1,29 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_8A291B8F-B2E2-40C2-9086-860AB0B00082" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_BFA8E245-1D5F-4270-A0D8-83F349B29A0D" name="TriTrainingReadiness" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_8A291B8F-B2E2-40C2-9086-860AB0B00082">
   <dmn:extensionElements/>
+  <dmn:itemDefinition id="_39C27E70-8962-4501-8A14-189443350CBC" name="Trainee" isCollection="false">
+    <dmn:itemComponent id="_ECD429B0-C49C-460B-B5E3-E38ED40946E9" name="SwimTime" isCollection="false">
+      <dmn:typeRef>time</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_EB0A93C5-AC5D-4F38-BCC6-05B39989D4CE" name="SwimDistance" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_83BAFE84-0B44-4F04-ABEB-107846227E42" name="BikeDuration" isCollection="false">
+      <dmn:typeRef>time</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_ECB60E50-7F75-411B-B1E4-DBCC5949A2CB" name="BikeDistance" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_27CA84A6-3CA0-47A7-BD19-03AD4CB1B61F" name="RunDistance" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_B79A7CAF-ADB5-477C-A703-EF3FF8BE52E6" name="RunPace" isCollection="false">
+      <dmn:typeRef>time</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
   <dmn:inputData id="_55C7D15F-67DF-4D41-B82D-C122C8457788" name="TraineeData">
     <dmn:extensionElements/>
-    <dmn:variable id="_778A58C8-F3D6-445A-BB80-0F4346E53009" name="TraineeData"/>
+    <dmn:variable id="_778A58C8-F3D6-445A-BB80-0F4346E53009" name="TraineeData" typeRef="Trainee"/>
   </dmn:inputData>
   <dmn:decision id="_34583070-E132-4261-B0DC-29E646B8567A" name="IsTraineeRaceReady">
     <dmn:extensionElements/>
@@ -13,22 +33,17 @@
     <dmn:informationRequirement id="_BC2759D9-4B2E-4E0D-A881-22C50098C582">
       <dmn:requiredInput href="#_55C7D15F-67DF-4D41-B82D-C122C8457788"/>
     </dmn:informationRequirement>
-    <dmn:literalExpression/>
+    <dmn:literalExpression id="_C8CBC1E5-3998-4FD8-AE3C-39B04C7547E9">
+      <dmn:text></dmn:text>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_C8CBC1E5-3998-4FD8-AE3C-39B04C7547E9"/>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
-      <dmndi:DMNShape id="dmnshape-_34583070-E132-4261-B0DC-29E646B8567A" dmnElementRef="_34583070-E132-4261-B0DC-29E646B8567A" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="169" y="42" width="165" height="91"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_55C7D15F-67DF-4D41-B82D-C122C8457788" dmnElementRef="_55C7D15F-67DF-4D41-B82D-C122C8457788" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -36,6 +51,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="169" y="221" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_34583070-E132-4261-B0DC-29E646B8567A" dmnElementRef="_34583070-E132-4261-B0DC-29E646B8567A" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="169" y="42" width="165" height="91"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_BC2759D9-4B2E-4E0D-A881-22C50098C582" dmnElementRef="_BC2759D9-4B2E-4E0D-A881-22C50098C582">
