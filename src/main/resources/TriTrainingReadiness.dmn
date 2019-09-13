@@ -29,7 +29,7 @@
     <dmn:extensionElements/>
     <dmn:question>Is Trainee Race Ready ?</dmn:question>
     <dmn:allowedAnswers>Yes, No, </dmn:allowedAnswers>
-    <dmn:variable id="_F8004140-7016-4E67-AEFE-B2D465CCC8ED" name="IsTraineeRaceReady" typeRef="string"/>
+    <dmn:variable id="_F8004140-7016-4E67-AEFE-B2D465CCC8ED" name="IsTraineeRaceReady" typeRef="Trainee"/>
     <dmn:informationRequirement id="_BC2759D9-4B2E-4E0D-A881-22C50098C582">
       <dmn:requiredInput href="#_55C7D15F-67DF-4D41-B82D-C122C8457788"/>
     </dmn:informationRequirement>
