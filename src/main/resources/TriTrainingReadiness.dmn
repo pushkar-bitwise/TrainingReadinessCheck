@@ -67,16 +67,16 @@
       <dmn:output id="_08DF8503-8D14-4163-91B8-AC5651CA8A4A" typeRef="Trainee"/>
       <dmn:rule id="_802F5FC4-4EEE-4760-B656-D1507B57D871">
         <dmn:inputEntry id="_7BEE5CB9-6ED6-491E-88CE-050881FA61B0">
-          <dmn:text>10</dmn:text>
+          <dmn:text>&gt; 28</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_05426CDA-BDAE-481B-9948-E93560CD1F6E">
-          <dmn:text>90</dmn:text>
+          <dmn:text> =&lt; 60</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_7A58E901-48A5-4814-8C09-73784751B2FD">
-          <dmn:text></dmn:text>
+          <dmn:text> > 5</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_77D8C00F-E519-405A-B4B9-CADF7C545DB7">
-          <dmn:text></dmn:text>
+          <dmn:text>=&lt; 25</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_0D343BAF-64D2-4000-A30D-C9C9FF040AD7">
           <dmn:text></dmn:text>
@@ -85,7 +85,7 @@
           <dmn:text></dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_78ED7C6B-C0EE-4683-830C-3C14D100BA19">
-          <dmn:text></dmn:text>
+          <dmn:text>Yes</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
     </dmn:decisionTable>
